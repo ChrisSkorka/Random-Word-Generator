@@ -5,13 +5,7 @@ import math, os
 
 def main():
 
-    folder = "data-f"
-    try:
-        os.mkdir(folder)
-    except:
-        pass
-
-    words = getWords("words/words-freq.txt")
+    words = getWords("english_words.txt")
     tree = Tree("_", 0)
 
     for i in range(5):
@@ -19,14 +13,7 @@ def main():
         addToTree(tree, tally)
         print(i)
 
-    saveTree(folder+"/distribution.txt", tree)
-
-    # saveList(folder+"/tally0.txt", getInitialMap(words))
-    # saveList(folder+"/tally1.txt", getMap(words, 0))
-    # saveList(folder+"/tally2.txt", getMap(words, 1))
-    # saveList(folder+"/tally3.txt", getMap(words, 2))
-    # saveList(folder+"/tally4.txt", getMap(words, 3))
-    # saveList(folder+"/tally5.txt", getMap(words, 4))
+    saveTree("distributions.txt", tree)
 
 class Word:
     def __init__(self, word, frequency):

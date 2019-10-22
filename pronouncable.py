@@ -2,10 +2,7 @@ import sys, random
 
 def main():
 
-    # folder = sys.argv[1]
-    folder = "data-f"
-
-    tree = initTree(folder+"/distribution.txt")
+    tree = initTree("distributions.txt")
 
     length = int(sys.argv[1])
     count = int(sys.argv[2])

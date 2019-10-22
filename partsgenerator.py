@@ -1,6 +1,9 @@
 from sys import stdin
-
 import random
+
+"""
+Generate all 1, 2, 3, 4 and 6 letter combinations from teh words and compute their frequencies
+"""
 
 class alphabet:
 

@@ -1,5 +1,9 @@
 import math
 
+"""
+Reorder the words by their 'pronouncability' score as determined by the previous pronouncability distribution model
+"""
+
 initial = {}
 first   = {}
 second  = {}
